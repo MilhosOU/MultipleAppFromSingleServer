@@ -125,3 +125,24 @@ Add a records, as shown in the table below
 |------|------|-------------|
 | A    | api1 | ip_address  |
 | A    | api2 | ip_address  |
+
+## 7. Enabling HTTPS for your applications
+
+Install Certbot:
+
+```bash
+sudo apt update && sudo apt install certbot python3-certbot-nginx.
+```
+
+Obtain certificates:
+
+```bash
+sudo certbot --nginx -d api1.yourdomain.com
+sudo certbot --nginx -d api2.yourdomain.com
+```
+
+Manual Renewal:
+
+```bash
+sudo certbot renew
+```
