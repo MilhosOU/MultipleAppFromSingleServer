@@ -58,7 +58,7 @@ func main() {
 
 For app1, create /etc/systemd/system/app1.service:
 
-```bash
+```ini
 [Unit]
 Description=Golang App 1
 
@@ -92,7 +92,7 @@ sudo apt install nginx
 
 Modify /etc/nginx/sites-available/default:
 
-```bash
+```nginx
 server {
     listen 80;
     server_name api1.yourdomain.com;
