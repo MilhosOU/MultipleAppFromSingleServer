@@ -146,3 +146,9 @@ Manual Renewal:
 ```bash
 sudo certbot renew
 ```
+
+List all certificates:
+
+```bash
+sudo certbot certificates
+```
