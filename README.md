@@ -116,3 +116,12 @@ Validate and refresh Nginx:
 sudo nginx -t
 sudo systemctl reload nginx
 ```
+
+## 6. Setting up DNS Records on Cloudflare
+
+Add a records, as shown in the table below
+
+| Type | Name | Content     |
+|------|------|-------------|
+| A    | api1 | ip_address  |
+| A    | api2 | ip_address  |
