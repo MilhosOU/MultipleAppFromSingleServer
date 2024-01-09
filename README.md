@@ -152,3 +152,35 @@ List all certificates:
 ```bash
 sudo certbot certificates
 ```
+
+## 8. Monitor the logs
+
+To view the logs for your specific systemctl (systemd) service:
+
+```bash
+journalctl -u app1.service
+```
+
+Follow the Logs: Add -f to tail the logs (see new logs in real-time):
+
+```bash
+journalctl -fu app1.service
+```
+
+Show Logs for the Current Boot: Use -b:
+
+```bash
+journalctl -u app1.service -b
+```
+
+Show Logs Since a Specific Time: Use --since:
+
+```bash
+journalctl -u app1.service --since "2024-01-09 12:00:00"
+```
+
+Show a Specific Number of Lines: Use -n followed by the number of lines:
+
+```bash
+journalctl -u app1.service -n 100
+```
