@@ -82,6 +82,13 @@ sudo systemctl start app1.service
 
 Repeat the process for app2.
 
+After modifying a systemd service file, you need to reload the systemd daemon to apply the changes.:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart app1
+```
+
 ## 4. Nginx Installation
 
 ```bash
